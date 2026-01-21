@@ -54,11 +54,31 @@ Key Responsibilities of Data Analytics
 3. Data Modeling, Analysis and presentation: use visualisations, dashboards and other methods to present findings and conclusions
 
 Common Challenges of making data warehousing and BI so difficult
-1. data silos and multiple system
-2. data quality
-3. governance and compliance
+1. data silos and multiplesystem
+    + needed data scattered across multiple platforms
+    + data teams operate in silos using inconsistent datasets
+2. Data Quality
+    + Data lakes and warehouses have limitation
+    + getting cleaned data is time consuming and delays insights 
+3. Governance and Compliance
+    + each platform in the ecosystem has a different governance structure
+    + managing sensitive data is complicated in a disjoint system
 
-AI/BI Dashboards
-- native performance optimisation for instant interactivity
+Data Warehouse VS Data Lakes
+- data warehouse for BI: clean data, reports, Ad Hoc Queries, data exploration
+- Data Lake for AI: predictive modeling, prescriptive analytics, automated decision making
+
+### Architecture for Databricks Intelligence platform
+- data sources -> ingest -> transform -> qiery -> visualise -> serve -> external apps
+- governance and security + unified storage layer
+
+Benefits of Databricks SQL
+- provides unified streaming and batch processing environment
+- databricks SQL is enterprise ready -> can use it for production workloads
+- all-in-one environment: simpler to administer
+
+AI/BI dashboards
+- all-in-one visualisation and presentation environment
+- native performance optimisation allow for near instant interactivity at scale
 - share for organisation and reviews
 dataset -> data -> visualisation (chart and filters)
